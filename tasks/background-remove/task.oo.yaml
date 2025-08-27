@@ -23,5 +23,5 @@ executor:
     spawn: false
 
 title: "Background Remove"
-description: "Remove background from images using FAL API"
+description: Enter a picture address, remove the background, and output an address
 icon: ":carbon:image:"

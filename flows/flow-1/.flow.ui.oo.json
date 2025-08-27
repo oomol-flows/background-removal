@@ -1,0 +1,19 @@
+{
+  "nodes": {
+    "background-remove#1": {
+      "rfNode": {
+        "position": {
+          "x": 63.02796822500445,
+          "y": 251.94961058390606
+        }
+      },
+      "sections": {
+        "preview": {
+          "_:oo-preview:_": {
+            "cardCollapsed": true
+          }
+        }
+      }
+    }
+  }
+}

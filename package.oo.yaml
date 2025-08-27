@@ -3,6 +3,9 @@ scripts:
   bootstrap: |
     npm install
     poetry install --no-root
-name: fal-model
-displayName: FAL models
+name: background-removal
+displayName: Background removal
 icon: ./icon.png
+description: Background removal
+releaseNotes: Background removal
+repository: https://github.com/oomol-flows/background-removal.git

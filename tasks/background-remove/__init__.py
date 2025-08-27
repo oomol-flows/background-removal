@@ -1,6 +1,5 @@
 # region generated meta
 import typing
-
 class Inputs(typing.TypedDict):
     file: str
     output_file: str
@@ -12,7 +11,6 @@ class Outputs(typing.TypedDict):
 import os
 import requests
 import json
-from typing import Dict, Any
 from oocana import Context
 import tempfile
 
@@ -31,7 +29,7 @@ def main(params: Inputs, context: Context) -> Outputs:
     
     # Get API configuration from environment
     console_api_url = context.oomol_llm_env.get("base_url")
-    api_key: Any = context.oomol_llm_env.get("api_key")
+    api_key = context.oomol_llm_env.get("api_key")
     
     file_path = params["file"]
     
