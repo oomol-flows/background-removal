@@ -1,0 +1,27 @@
+inputs_def:
+  - handle: file
+    json_schema:
+      type: string
+      ui:widget: file
+    nullable: false
+  - handle: output_file
+    json_schema:
+      type: string
+      ui:widget: save
+    value:
+    nullable: true
+outputs_def:
+  - handle: image
+    json_schema:
+      type: string
+      contentMediaType: oomol/file
+
+executor:
+  name: python
+  options:
+    entry: __init__.py
+    spawn: false
+
+title: "Background Remove"
+description: "Remove background from images using FAL API"
+icon: ":carbon:image:"
