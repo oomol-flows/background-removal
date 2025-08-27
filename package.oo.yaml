@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.0.2
 scripts:
   bootstrap: |
     npm install
@@ -7,5 +7,5 @@ name: background-removal
 displayName: Background removal
 icon: ./icon.png
 description: Background removal
-releaseNotes: Background removal
+releaseNotes: update
 repository: https://github.com/oomol-flows/background-removal.git
