@@ -98,13 +98,6 @@ def main(params: Inputs, context: Context) -> Outputs:
                     temp_file.write(image_response.content)
                     temp_file.close()
                     saved_file_path = temp_file.name
-                
-                # Preview the downloaded image
-                context.preview({
-                    "type": "image",
-                    "data": saved_file_path
-                })
-                
                 return {"image": saved_file_path}
                 
             except requests.exceptions.Timeout:

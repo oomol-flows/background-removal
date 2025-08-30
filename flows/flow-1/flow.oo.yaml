@@ -3,8 +3,16 @@ nodes:
     title: "Background Remove #1"
     inputs_from:
       - handle: file
-        value: /oomol-driver/oomol-storage/image/cat-sitting-on-shelf-jpg.jpg
+        value: /oomol-driver/oomol-storage/tmpqe9n8u7l.jpg
       - handle: output_file
         value: null
     task: self::background-remove
+  - node_id: image_preview#2
+    title: "Image preview #2"
+    inputs_from:
+      - handle: image_path
+        from_node:
+          - node_id: background-remove#1
+            output_handle: image
+    task: oomol-preview::image_preview
 title: background-remove-test

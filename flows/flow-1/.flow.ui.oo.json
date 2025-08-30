@@ -6,12 +6,13 @@
           "x": 63.02796822500445,
           "y": 251.94961058390606
         }
-      },
-      "sections": {
-        "preview": {
-          "_:oo-preview:_": {
-            "cardCollapsed": true
-          }
+      }
+    },
+    "image_preview#2": {
+      "rfNode": {
+        "position": {
+          "x": 611.5481939265321,
+          "y": 332.1257236877158
         }
       }
     }
