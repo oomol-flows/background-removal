@@ -1,0 +1,39 @@
+inputs_def:
+  - handle: image_url
+    description: "The web URL of the image you want to process for background
+      removal. Must be a valid HTTP/HTTPS URL pointing to an image file (PNG,
+      JPG, JPEG, WEBP, etc.)"
+    json_schema:
+      type: string
+    nullable: false
+  - handle: output_file
+    description: "Optional file path where the processed image will be saved. If not
+      specified, the image will be saved to a temporary location. Use the file
+      picker to choose your desired save location and format."
+    json_schema:
+      type: string
+      ui:widget: save
+    value:
+    nullable: true
+outputs_def:
+  - handle: image
+    description: "The processed image file with background removed. Returns the file
+      path to the image with transparent background, ready for use in other
+      applications or workflows."
+    json_schema:
+      type: string
+      contentMediaType: oomol/file
+
+executor:
+  name: python
+  options:
+    entry: __init__.py
+    spawn: false
+
+title: "RemoveBG"
+description: "AI-powered background removal tool that automatically detects and
+  removes backgrounds from images. Simply provide an image URL and get a clean
+  image with transparent background. Perfect for creating professional photos,
+  product images, or preparing images for graphic design work."
+icon: ":carbon:image:"
+private: true
