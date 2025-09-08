@@ -4,7 +4,7 @@ from requests.models import Response
 
 import typing
 class Inputs(typing.TypedDict):
-    image_url: str
+    image_file: str
     output_file: str
 
 class Outputs(typing.TypedDict):
@@ -37,20 +37,33 @@ def main(params: Inputs, context: Context) -> Outputs:
     api_key = context.oomol_llm_env.get("api_key")
     
     try:
-        # Step 1: Upload file and start background removal task
+        # Step 1: Start background removal task
         start_url = console_api_url + "/api/tasks/fal/images/background-remove/start"
         
-        data = {
-            'image_url': params["image_url"]
-        }
+        image_input = params["image_file"]
         
-        headers = {
-            'Authorization': api_key,
-            'Content-Type': 'application/json'
-        }
+        # Check if input is a URL or file path
+        if image_input.startswith(('http://', 'https://')):
+            # Handle URL input
+            data = {'image_url': image_input}
+            headers = {
+                'Authorization': api_key,
+                'Content-Type': 'application/json'
+            }
+            response: Response = requests.post(start_url, json=data, headers=headers, timeout=120)
+        else:
+            # Handle file path input
+            if not os.path.exists(image_input):
+                raise FileNotFoundError(f"Image file not found: {image_input}")
+                
+            # Upload file as multipart/form-data
+            with open(image_input, 'rb') as f:
+                files = {'image_url': f}
+                headers = {
+                    'Authorization': api_key
+                }
+                response: Response = requests.post(start_url, files=files, headers=headers, timeout=120)
         
-        # Send POST request to start background removal task
-        response: Response = requests.post(start_url, json=data, headers=headers, timeout=120)
         response.raise_for_status()
         
         # Parse JSON response to get request_id

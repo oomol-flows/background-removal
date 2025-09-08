@@ -1,9 +1,8 @@
 inputs_def:
   - handle: image_file
-    description: ""
+    description: "Image file path or URL to process for background removal"
     json_schema:
       type: string
-      ui:widget: file
     nullable: false
   - handle: output_file
     description: "Optional file path where the processed image will be saved. If not
