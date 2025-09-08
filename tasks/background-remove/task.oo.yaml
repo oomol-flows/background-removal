@@ -1,8 +1,7 @@
 inputs_def:
-  - handle: file
+  - handle: image_url
     json_schema:
       type: string
-      ui:widget: file
     nullable: false
   - handle: output_file
     json_schema:

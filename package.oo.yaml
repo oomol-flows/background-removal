@@ -11,3 +11,4 @@ releaseNotes: update icon
 repository: https://github.com/oomol-flows/background-removal.git
 dependencies:
   oomol-preview: 0.1.0
+  upload-to-cloud: 0.0.1
