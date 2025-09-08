@@ -3,8 +3,8 @@
     "background-remove#1": {
       "rfNode": {
         "position": {
-          "x": 416,
-          "y": 0
+          "x": 902,
+          "y": 62.5
         }
       }
     },
@@ -12,8 +12,8 @@
       "contentWidth": 350,
       "rfNode": {
         "position": {
-          "x": 0,
-          "y": 13.5
+          "x": 486,
+          "y": 0
         }
       }
     }
@@ -22,16 +22,16 @@
     "input": {
       "rfNode": {
         "position": {
-          "x": -319.0596803497241,
-          "y": -100
+          "x": 0,
+          "y": 121
         }
       }
     },
     "output": {
       "rfNode": {
         "position": {
-          "x": 1000,
-          "y": -100
+          "x": 1388,
+          "y": 134.5
         }
       }
     }

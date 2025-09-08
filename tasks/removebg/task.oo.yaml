@@ -1,10 +1,9 @@
 inputs_def:
-  - handle: image_url
-    description: "The web URL of the image you want to process for background
-      removal. Must be a valid HTTP/HTTPS URL pointing to an image file (PNG,
-      JPG, JPEG, WEBP, etc.)"
+  - handle: image_file
+    description: ""
     json_schema:
       type: string
+      ui:widget: file
     nullable: false
   - handle: output_file
     description: "Optional file path where the processed image will be saved. If not
@@ -31,9 +30,6 @@ executor:
     spawn: false
 
 title: "RemoveBG"
-description: "AI-powered background removal tool that automatically detects and
-  removes backgrounds from images. Simply provide an image URL and get a clean
-  image with transparent background. Perfect for creating professional photos,
-  product images, or preparing images for graphic design work."
+description: ""
 icon: ":carbon:image:"
 private: true

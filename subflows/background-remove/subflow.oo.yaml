@@ -1,16 +1,24 @@
 nodes:
   - node_id: background-remove#1
     title: "Background Remove #1"
+    description: "AI-powered background removal processor that takes the uploaded
+      image URL and removes the background, creating a clean transparent image
+      perfect for professional use."
     inputs_from:
-      - handle: image_url
+      - handle: image_file
         from_node:
           - node_id: upload-to-cloud#1
             output_handle: cache_url
       - handle: output_file
         value: null
+        from_flow:
+          - input_handle: output_file
     task: self::removebg
   - node_id: upload-to-cloud#1
     title: "Upload File to Cloud #1"
+    description: "Uploads your local image file to the cloud and generates a URL
+      that can be processed by the background removal service. Handles various
+      image formats securely."
     inputs_from:
       - handle: file
         from_flow:
@@ -19,13 +27,29 @@ nodes:
 title: Background Remove
 inputs_def:
   - handle: file
+    description: "Select an image file from your computer that you want to remove
+      the background from. Supports common formats like PNG, JPG, JPEG, WEBP,
+      and more."
     json_schema:
       type: string
       ui:widget: file
     nullable: false
     executor_name: nodejs
+  - handle: output_file
+    json_schema:
+      type: string
+      ui:widget: save
+    nullable: true
+    description: Optional file path where the processed image will be saved. If not
+      specified, the image will be saved to a temporary location. Use the file
+      picker to choose your desired save location and format.
+    value:
+    executor_name: python
 outputs_def:
   - handle: image
+    description: "The processed image file with background completely removed and
+      transparent background applied. Ready for use in presentations, designs,
+      or further editing."
     json_schema:
       type: string
       contentMediaType: oomol/file
@@ -37,3 +61,10 @@ outputs_from:
       - node_id: background-remove#1
         output_handle: image
 private: false
+description: "Complete background removal workflow that handles everything from
+  file upload to final processing. Simply select an image file from your
+  computer, and this subflow will automatically upload it to the cloud and
+  remove the background using advanced AI technology. Perfect for creating
+  professional product photos, marketing materials, or preparing images for
+  graphic design projects. No technical knowledge required - just select your
+  image and get professional results."
