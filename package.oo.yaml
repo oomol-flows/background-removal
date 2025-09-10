@@ -1,4 +1,4 @@
-version: 0.0.6
+version: 0.0.8
 scripts:
   bootstrap: |
     npm install
@@ -6,7 +6,10 @@ scripts:
 name: background-removal
 displayName: Background removal
 icon: ./icon.png
-description: Background removal
+description: A powerful OOMOL package that automatically removes backgrounds
+  from images using advanced AI technology. Perfect for creating professional
+  photos, product images, or any visual content that needs a clean, transparent
+  background.
 repository: https://github.com/oomol-flows/background-removal.git
 dependencies:
   upload-to-cloud: 0.0.1

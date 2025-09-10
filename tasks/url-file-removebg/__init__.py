@@ -1,15 +1,11 @@
-# region generated meta
-from requests.models import Response
-
-
+#region generated meta
 import typing
 class Inputs(typing.TypedDict):
-    image_file: str
-    output_file: str
-
+    image_url: str
+    output_file: str | None
 class Outputs(typing.TypedDict):
     image: str
-# endregion
+#endregion
 
 import os
 import requests
@@ -40,7 +36,7 @@ def main(params: Inputs, context: Context) -> Outputs:
         # Step 1: Start background removal task
         start_url = console_api_url + "/api/tasks/fal/images/background-remove/start"
         
-        image_input = params["image_file"]
+        image_input = params["image_url"]
         
         # Check if input is a URL or file path
         if image_input.startswith(('http://', 'https://')):

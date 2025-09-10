@@ -1,6 +1,6 @@
 inputs_def:
-  - handle: image_file
-    description: "Image file path or URL to process for background removal"
+  - handle: image_url
+    description: "Image URL to process for background removal"
     json_schema:
       type: string
     nullable: false
@@ -28,7 +28,10 @@ executor:
     entry: __init__.py
     spawn: false
 
-title: "RemoveBG"
-description: ""
-icon: ":carbon:image:"
-private: true
+title: "Url File RemoveBG"
+description: "AI-powered background removal tool that processes images from
+  URLs. Automatically removes backgrounds from images and provides clean
+  transparent results suitable for professional use, design work, or further
+  processing."
+icon: ":carbon:url:"
+private: false

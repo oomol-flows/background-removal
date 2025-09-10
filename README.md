@@ -1,6 +1,6 @@
 # Background Removal
 
-A powerful OOMOL workflow package that automatically removes backgrounds from images using advanced AI technology. Perfect for creating professional photos, product images, or any visual content that needs a clean, transparent background.
+A powerful OOMOL package that automatically removes backgrounds from images using advanced AI technology. Perfect for creating professional photos, product images, or any visual content that needs a clean, transparent background.
 
 ## 🚀 What This Package Does
 

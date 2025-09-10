@@ -1,0 +1,12 @@
+{
+  "nodes": {
+    "background-remove#1": {
+      "rfNode": {
+        "position": {
+          "x": 216,
+          "y": 63
+        }
+      }
+    }
+  }
+}
