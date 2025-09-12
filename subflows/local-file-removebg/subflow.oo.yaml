@@ -1,9 +1,7 @@
 nodes:
   - node_id: background-remove#1
     title: "Background Remove #1"
-    description: "AI-powered background removal processor that takes the uploaded
-      image URL and removes the background, creating a clean transparent image
-      perfect for professional use."
+    description: "%ai-powered-background-removal-processor-that-takes-the-uploaded%"
     inputs_from:
       - handle: image_url
         from_node:
@@ -16,9 +14,7 @@ nodes:
     task: self::url-file-removebg
   - node_id: upload-to-cloud#1
     title: "Upload File to Cloud #1"
-    description: "Uploads your local image file to the cloud and generates a URL
-      that can be processed by the background removal service. Handles various
-      image formats securely."
+    description: "%uploads-your-local-image-file-to-the-cloud-and-generates-a-url-t%"
     inputs_from:
       - handle: file
         from_flow:
@@ -61,8 +57,5 @@ outputs_from:
       - node_id: background-remove#1
         output_handle: image
 private: false
-description: "Complete background removal workflow for local image files. This
-  subflow combines file upload and AI-powered background removal to process your
-  local images, automatically removing backgrounds and providing
-  professional-quality transparent results ready for any application."
+description: "%complete-background-removal-workflow-for-local-image-files-this%"
 icon: ":carbon:image:"

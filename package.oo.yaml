@@ -1,16 +1,13 @@
-version: 0.0.8
+version: 0.0.9
 scripts:
   bootstrap: |
     npm install
     poetry install --no-root
 name: background-removal
-displayName: Background removal
+displayName: "%background-removal%"
 icon: ./icon.png
-description: A powerful OOMOL package that automatically removes backgrounds
-  from images using advanced AI technology. Perfect for creating professional
-  photos, product images, or any visual content that needs a clean, transparent
-  background.
+description: "%a-powerful-oomol-package-that-automatically-removes-backgrounds%"
 repository: https://github.com/oomol-flows/background-removal.git
 dependencies:
   upload-to-cloud: 0.0.1
-releaseNotes: fix bug
+releaseNotes: add i18n

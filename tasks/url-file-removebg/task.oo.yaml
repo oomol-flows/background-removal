@@ -29,9 +29,6 @@ executor:
     spawn: false
 
 title: "Url File RemoveBG"
-description: "AI-powered background removal tool that processes images from
-  URLs. Automatically removes backgrounds from images and provides clean
-  transparent results suitable for professional use, design work, or further
-  processing."
+description: "%ai-powered-background-removal-tool-that-processes-images-from-ur%"
 icon: ":carbon:url:"
 private: false

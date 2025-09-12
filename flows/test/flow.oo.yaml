@@ -7,3 +7,4 @@ nodes:
       - handle: output_file
         value: null
     subflow: self::local-file-removebg
+title: test
