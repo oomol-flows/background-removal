@@ -97,8 +97,8 @@ def main(params: Inputs, context: Context) -> Outputs:
                 break
             elif task_status == 'FAILED':
                 raise Exception("Background removal task failed")
-            elif task_status == 'IN_PROGRESS':
-                print(f"Task is running... (attempt {attempt + 1}/{max_attempts})")
+            elif task_status in ['IN_PROGRESS', 'IN_QUEUE', 'PENDING']:
+                print(f"Task is {task_status.lower()}... (attempt {attempt + 1}/{max_attempts})")
                 time.sleep(poll_interval)
             else:
                 raise ValueError(f"Unknown task status: {task_status}")

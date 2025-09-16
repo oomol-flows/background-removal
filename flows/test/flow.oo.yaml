@@ -3,7 +3,6 @@ nodes:
     title: "Background Remove #1"
     inputs_from:
       - handle: file
-        value: /oomol-driver/oomol-storage/a66c4895-77cb-4657-83ac-a9be40a19b8a.jpg
       - handle: output_file
         value: null
     subflow: self::local-file-removebg
