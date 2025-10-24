@@ -6,7 +6,7 @@ nodes:
       - handle: image_url
         from_node:
           - node_id: upload-to-cloud#1
-            output_handle: cache_url
+            output_handle: remote_url
       - handle: output_file
         value: null
         from_flow:
