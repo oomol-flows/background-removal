@@ -1,13 +1,11 @@
 inputs_def:
   - handle: image_url
-    description: "Image URL to process for background removal"
+    description: "%image-url-to-process-for-background-removal%"
     json_schema:
       type: string
     nullable: false
   - handle: output_file
-    description: "Optional file path where the processed image will be saved. If not
-      specified, the image will be saved to a temporary location. Use the file
-      picker to choose your desired save location and format."
+    description: "%optional-file-path-where-the-processed-image-will-be-saved-if-no%"
     json_schema:
       type: string
       ui:widget: save
@@ -28,7 +26,7 @@ executor:
     entry: __init__.py
     spawn: false
 
-title: "Url File RemoveBG"
-description: "%ai-powered-background-removal-tool-that-processes-images-from-ur%"
+title: "%url-file-removebg%"
+description: "%ai-powered-background-removal-tool-that-processes-images-from-ur2%"
 icon: ":carbon:url:"
 private: false

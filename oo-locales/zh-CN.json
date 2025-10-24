@@ -3,5 +3,19 @@
   "ai-powered-background-removal-tool-that-processes-images-from-ur": "AI驱动的背景移除工具，可处理来自URL的图片。自动去除图片背景，提供适用于专业用途、设计工作或后续处理的干净透明结果。",
   "complete-background-removal-workflow-for-local-image-files-this": "本地图片文件的完整背景移除工作流程。此子流程结合了文件上传和AI驱动的背景移除功能，可处理您的本地图片，自动去除背景，并提供专业品质的透明效果，适用于任何应用场景。",
   "background-removal": "背景移除",
-  "a-powerful-oomol-package-that-automatically-removes-backgrounds": "一个强大的 OOMOL 软件包，利用先进的 AI 技术自动去除图片背景。非常适合制作专业照片、产品图片或任何需要干净透明背景的视觉内容。"
+  "a-powerful-oomol-package-that-automatically-removes-backgrounds": "一个强大的 OOMOL 软件包，利用先进的 AI 技术自动去除图片背景。非常适合制作专业照片、产品图片或任何需要干净透明背景的视觉内容。",
+  "test": "测试",
+  "background-remove-1": "背景移除 #1",
+  "url-file-removebg": "URL 文件移除背景",
+  "ai-powered-background-removal-tool-that-processes-images-from-ur2": "AI 驱动的背景移除工具，能够处理来自 URL 的图像。获取图像，移除背景，并将其保存到指定位置或返回以供进一步处理。",
+  "image-url-to-process-for-background-removal": "用于去除背景的图像 URL",
+  "optional-file-path-where-the-processed-image-will-be-saved-if-no": "可选的文件路径，用于保存处理后的图片。如果未指定，图片将被保存到临时位置。请使用文件选择器选择您想要的保存位置和格式。",
+  "local-file-removebg": "本地文件移除背景",
+  "complete-background-removal-workflow-for-local-image-files-this2": "本地图片文件的完整背景移除工作流程。该子流程会将您的图片上传到云存储，使用 AI 驱动的背景移除技术进行处理，并返回带有透明背景的结果。",
+  "select-an-image-file-from-your-computer-that-you-want-to-remove": "从您的电脑中选择一张要去除背景的图片文件。支持常见格式，如 PNG、JPG、JPEG、WEBP 等。",
+  "optional-file-path-where-the-processed-image-will-be-saved-if-no2": "可选的文件路径，用于保存已处理的图像。如果未指定，图像将保存到临时位置。请使用文件选择器选择您想要的保存位置和格式。",
+  "background-remove-12": "背景去除 #1",
+  "ai-powered-background-removal-processor-that-takes-the-uploaded2": "由 AI 驱动的背景移除处理器，可获取上传的图片 URL 并移除其背景，返回一个透明的 PNG 文件。",
+  "upload-file-to-cloud-1": "上传文件到云端 #1",
+  "uploads-your-local-image-file-to-the-cloud-storage-and-generates": "将您的本地图片文件上传到云存储，并生成一个可用于背景移除处理的 URL。"
 }

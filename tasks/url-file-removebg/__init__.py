@@ -4,7 +4,7 @@ class Inputs(typing.TypedDict):
     image_url: str
     output_file: str | None
 class Outputs(typing.TypedDict):
-    image: str
+    image: typing.NotRequired[str]
 #endregion
 
 import os

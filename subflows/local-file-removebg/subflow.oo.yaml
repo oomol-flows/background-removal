@@ -1,7 +1,7 @@
 nodes:
   - node_id: background-remove#1
-    title: "Background Remove #1"
-    description: "%ai-powered-background-removal-processor-that-takes-the-uploaded%"
+    title: "%background-remove-12%"
+    description: "%ai-powered-background-removal-processor-that-takes-the-uploaded2%"
     inputs_from:
       - handle: image_url
         from_node:
@@ -13,33 +13,29 @@ nodes:
           - input_handle: output_file
     task: self::url-file-removebg
   - node_id: upload-to-cloud#1
-    title: "Upload File to Cloud #1"
-    description: "%uploads-your-local-image-file-to-the-cloud-and-generates-a-url-t%"
+    title: "%upload-file-to-cloud-1%"
+    description: "%uploads-your-local-image-file-to-the-cloud-storage-and-generates%"
     inputs_from:
       - handle: file
         from_flow:
           - input_handle: file
     task: upload-to-cloud::upload-to-cloud
-title: Local File RemoveBG
+title: "%local-file-removebg%"
 inputs_def:
   - handle: file
-    description: "Select an image file from your computer that you want to remove
-      the background from. Supports common formats like PNG, JPG, JPEG, WEBP,
-      and more."
+    description: "%select-an-image-file-from-your-computer-that-you-want-to-remove%"
     json_schema:
       type: string
       ui:widget: file
     nullable: false
     executor_name: nodejs
   - handle: output_file
+    description: "%optional-file-path-where-the-processed-image-will-be-saved-if-no2%"
     json_schema:
       type: string
       ui:widget: save
-    nullable: true
-    description: Optional file path where the processed image will be saved. If not
-      specified, the image will be saved to a temporary location. Use the file
-      picker to choose your desired save location and format.
     value:
+    nullable: true
     executor_name: python
 outputs_def:
   - handle: image
@@ -57,5 +53,5 @@ outputs_from:
       - node_id: background-remove#1
         output_handle: image
 private: false
-description: "%complete-background-removal-workflow-for-local-image-files-this%"
+description: "%complete-background-removal-workflow-for-local-image-files-this2%"
 icon: ":carbon:image:"

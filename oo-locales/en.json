@@ -4,5 +4,19 @@
   "complete-background-removal-workflow-for-local-image-files-this": "Complete background removal workflow for local image files. This subflow combines file upload and AI-powered background removal to process your local images, automatically removing backgrounds and providing professional-quality transparent results ready for any application.",
   "uploads-your-local-image-file-to-the-cloud-and-generates-a-url-t": "Uploads your local image file to the cloud and generates a URL that can be processed by the background removal service. Handles various image formats securely.",
   "background-removal": "Background removal",
-  "a-powerful-oomol-package-that-automatically-removes-backgrounds": "A powerful OOMOL package that automatically removes backgrounds from images using advanced AI technology. Perfect for creating professional photos, product images, or any visual content that needs a clean, transparent background."
+  "a-powerful-oomol-package-that-automatically-removes-backgrounds": "A powerful OOMOL package that automatically removes backgrounds from images using advanced AI technology. Perfect for creating professional photos, product images, or any visual content that needs a clean, transparent background.",
+  "test": "test",
+  "background-remove-1": "Background Remove #1",
+  "url-file-removebg": "URL File RemoveBG",
+  "ai-powered-background-removal-tool-that-processes-images-from-ur2": "AI-powered background removal tool that processes images from URLs. Fetches the image, removes the background, and saves it to the specified location or returns it for further processing.",
+  "image-url-to-process-for-background-removal": "Image URL to process for background removal",
+  "optional-file-path-where-the-processed-image-will-be-saved-if-no": "Optional file path where the processed image will be saved. If not specified, the image will be saved to a temporary location. Use the file picker to choose your desired save location and format.",
+  "local-file-removebg": "Local File RemoveBG",
+  "complete-background-removal-workflow-for-local-image-files-this2": "Complete background removal workflow for local image files. This subflow uploads your image to cloud storage, processes it with AI-powered background removal, and returns the result with a transparent background.",
+  "select-an-image-file-from-your-computer-that-you-want-to-remove": "Select an image file from your computer that you want to remove the background from. Supports common formats like PNG, JPG, JPEG, WEBP, and more.",
+  "optional-file-path-where-the-processed-image-will-be-saved-if-no2": "Optional file path where the processed image will be saved. If not specified, the image will be saved to a temporary location. Use the file picker to choose your desired save location and format.",
+  "background-remove-12": "Background Remove #1",
+  "ai-powered-background-removal-processor-that-takes-the-uploaded2": "AI-powered background removal processor that takes the uploaded image URL and removes its background, returning a transparent PNG file",
+  "upload-file-to-cloud-1": "Upload File to Cloud #1",
+  "uploads-your-local-image-file-to-the-cloud-storage-and-generates": "Uploads your local image file to the cloud storage and generates a URL that can be accessed for background removal processing"
 }

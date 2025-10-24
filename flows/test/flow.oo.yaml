@@ -1,9 +1,9 @@
 nodes:
   - node_id: background-remove#1
-    title: "Background Remove #1"
+    title: "%background-remove-1%"
     inputs_from:
       - handle: file
       - handle: output_file
         value: null
     subflow: self::local-file-removebg
-title: test
+title: "%test%"
