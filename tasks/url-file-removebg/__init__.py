@@ -16,7 +16,7 @@ import time
 import time
 
 
-def main(params: Inputs, context: Context) -> Outputs:
+async def main(params: Inputs, context: Context) -> Outputs:
     """
     Main function to remove background from an image using FAL API.
     
@@ -29,8 +29,8 @@ def main(params: Inputs, context: Context) -> Outputs:
     """
     
     # Get API configuration from environment
-    console_api_url = context.oomol_llm_env.get("base_url")
-    api_key = context.oomol_llm_env.get("api_key")
+    console_api_url = "https://llm.oomol.com"
+    api_key = await context.oomol_token()
     
     try:
         # Step 1: Start background removal task

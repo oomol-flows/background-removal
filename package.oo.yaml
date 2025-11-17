@@ -1,4 +1,4 @@
-version: 0.1.1
+version: 0.1.2
 scripts:
   bootstrap: |
     npm install
@@ -9,5 +9,5 @@ icon: ./icon.png
 description: "%a-powerful-oomol-package-that-automatically-removes-backgrounds%"
 repository: https://github.com/oomol-flows/background-removal.git
 dependencies:
-  upload-to-cloud: 0.0.4
+  upload-to-cloud: 0.0.5
 releaseNotes: add i18n
