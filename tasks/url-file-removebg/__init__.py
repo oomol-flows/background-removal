@@ -142,14 +142,14 @@ async def main(params: Inputs, context: Context) -> Outputs:
                 f.write(image_download_response.content)
             saved_file_path = output_file_path
         else:
-            # Use temporary file as fallback
+            # Use context.session_dir as fallback
             file_extension = os.path.splitext(image_url)[1] or '.png'
             if len(file_extension) > 4:  # Handle cases where extension might be too long
                 file_extension = '.png'
             temp_file = tempfile.NamedTemporaryFile(
-                suffix=file_extension, 
+                suffix=file_extension,
                 delete=False,
-                dir="/oomol-driver/oomol-storage"
+                dir=context.session_dir
             )
             temp_file.write(image_download_response.content)
             temp_file.close()

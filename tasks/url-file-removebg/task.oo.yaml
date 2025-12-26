@@ -18,7 +18,7 @@ outputs_def:
       applications or workflows."
     json_schema:
       type: string
-      contentMediaType: oomol/file
+      ui:widget: file
 
 executor:
   name: python

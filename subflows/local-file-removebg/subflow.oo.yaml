@@ -44,7 +44,7 @@ outputs_def:
       or further editing."
     json_schema:
       type: string
-      contentMediaType: oomol/file
+      ui:widget: file
     nullable: false
     executor_name: python
 outputs_from:
